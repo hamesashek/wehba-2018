@@ -1,0 +1,211 @@
+
+.bubb {
+    list-style: none;
+    /* padding: 10px; */
+    /* background: #ff5878; */
+    /* margin: 0 auto; */
+    text-align: right;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-top: 50px;
+}
+
+.h1-bubb {
+    color: #fbffd8;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 36px;
+    margin: -10px 0 1px;
+    text-shadow: 1px 2px #000;
+    padding: 10px;
+    font-weight: bold;
+    /* top: -110px; */
+    height: 20.1;
+    /* line-height: 50px; */
+}
+
+
+
+.containing {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: rotate(15deg);
+}
+
+.liquid {
+    background: linear-gradient(to right, #01c2ea 50%, #00b5da 50%);
+    box-shadow: 0px 0px 0px 3px rgb(232, 253, 30);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.flask {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 15px solid #fff;
+    background: #fff;
+    position: relative;
+    transform: rotate(-15deg) scale(0.7);
+    transition: all ease 0.2s;
+    cursor: pointer;
+    outline: none;
+}
+.flask:hover, .flask:focus {
+    transform: rotate(-15deg) scale(1);
+    box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.05),  0px 0px 0px 50px rgba(255,255,255,0.05), 0px 0px 0px 75px rgba(255,255,255,0.05),  0px 0px 0px 100px rgba(255,255,255,0.05);
+}
+
+
+
+
+.flask:active {
+    box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3),  0px 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 0px 75px rgba(255,255,255,0.3),  0px 0px 0px 100px rgba(255,255,255,0.3);
+}
+
+.flask:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 30px;
+    background: #fff;
+    border: 10px solid #fff;
+    left: 25px;
+    top: -50px;
+}
+
+.flask:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 12px;
+    background: #fff;
+    left: 15px;
+    top: -50px;
+    border-radius: 5px;
+}
+
+.flask:nth-child(2) .liquid {
+    background: linear-gradient(to right, #ff4538 50%, #f93b2e 50%);
+    box-shadow: 0px 0px 0px 3px rgb(255, 120, 111);
+}
+.flask:nth-child(3) .liquid {
+    background: linear-gradient(to right, #29bcff 50%, #03A9F4 50%);
+    box-shadow: 0px 0px 0px 3px rgb(93, 205, 255);
+}
+.flask:nth-child(4) .liquid {
+    background: linear-gradient(to right, #7abd7c 50%, #65ab67 50%);
+    box-shadow: 0px 0px 0px 3px rgb(144, 214, 146);
+}
+.flask:nth-child(5) .liquid {
+    background: linear-gradient(to right, #fdd137 50%, #ffc600 50%);
+    box-shadow: 0px 0px 0px 3px rgb(255, 226, 124);
+}
+.flask:nth-child(6) .liquid {
+    background: linear-gradient(to right, #aa38bd 50%, #9C27B0 50%);
+    box-shadow: 0px 0px 0px 3px rgb(208, 133, 220);
+}
+
+
+.flask .containing:after {
+    position: absolute;
+    width: 100%;
+    text-align:center;
+    bottom: 55px;
+    left: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:'Varela Round';
+    display: none;
+}
+.flask:nth-child(2) .containing:after {
+    content:'حب';
+    color: #ff453;
+}
+.flask:nth-child(3) .containing:after {
+    content:'زمن';
+    color: #29bcff;
+}
+.flask:nth-child(4) .containing:after {
+    content:'الصحة';
+    color: #7abd7c;
+}
+.flask:nth-child(5) .containing:after {
+    content:'طاقة';
+    color: #fdd137;
+}
+.flask:nth-child(6) .containing:after {
+    content:'قوة';
+    color: #aa38bd;
+}
+
+.flask:hover .containing:after, .flask:focus .containing:after {
+    display: block;
+}
+  
+.bubbles {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: bubble 3s linear infinite;
+-webkit-animation: bubble 3s linear infinite;
+-moz-animation: bubble 3s linear infinite;
+-o-animation: bubble 3s linear infinite;
+}
+
+
+@keyframes bubble {
+  0% {
+      box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                  25px 45px 0px -10px rgba(255,255,255,0.5),
+                  43px -5px 0px -10px rgba(255,255,255,0.5),
+                  58px 55px 0px -10px rgba(255,255,255,0.5),
+                  78px 35px 0px -10px rgba(255,255,255,0.5);
+  }
+  1% {
+      box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                  25px 45px 0px -10px rgba(255,255,255,0.5),
+                  43px 55px 0px -10px rgba(255,255,255,0.5),
+                  58px 55px 0px -10px rgba(255,255,255,0.5),
+                  78px 35px 0px -10px rgba(255,255,255,0.5);
+  }
+  25% {
+      box-shadow: 10px 15px 0px 0px rgba(255,255,255,0.5),
+                  25px 45px 0px -10px rgba(255,255,255,0.5),
+                  43px 25px 0px 0px rgba(255,255,255,0.5),
+                  58px 55px 0px -10px rgba(255,255,255,0.5),
+                  78px 35px 0px -10px rgba(255,255,255,0.5);
+  }
+  50% {
+      box-shadow: 10px -5px 0px -10px rgba(255,255,255,0.5),
+                  25px 45px 0px -10px rgba(255,255,255,0.5),
+                  43px 5px 0px -10px rgba(255,255,255,0.5),
+                  58px 25px 0px 0px rgba(255,255,255,0.5),
+                  78px 35px 0px -10px rgba(255,255,255,0.5);
+  }
+  75% {
+      box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                  25px 25px 0px 0px rgba(255,255,255,0.5),
+                  43px 45px 0px -10px rgba(255,255,255,0.5),
+                  58px 0px 0px -10px rgba(255,255,255,0.5),
+                  78px 10px 0px 0px rgba(255,255,255,0.5);
+  }
+  100% {
+      box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                  25px -5px 0px -10px rgba(255,255,255,0.5),
+                  43px 25px 0px 0px rgba(255,255,255,0.5),
+                  58px 55px 0px -10px rgba(255,255,255,0.5),
+                  78px -5px 0px -10px rgba(255,255,255,0.5);
+  }
+}
