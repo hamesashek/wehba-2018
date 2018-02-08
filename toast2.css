@@ -1,0 +1,44 @@
+
+.M14_ProfilPlus{text-align:center;}
+.M14_ProfilPlus a{margin:0px 2px 0px 2px;}
+.postprofile {
+    margin-bottom: 350px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e7e7e7;
+}
+
+.index-box tr {border-top: 0 none;}
+#profile-advanced-details .avatar img, .author-avatar img, .current-avatar img, .friend-block .avatar img, .lastpost-avatar img, .member-avatar img {height: 100%;}
+
+/* ---Statistics--- */
+#fo_stat #s0 tr:nth-child(2) .row2 div:nth-child(1) strong{font-size:25px;padding-top:8px;font-family:Georgia;color: red;}#fo_stat #s0 tr:nth-child(8) .row2 p strong{font-size:32px;padding-top:8px;color: red;font-family:Georgia}#fo_stat #s0 tr:nth-child(8) .row2 p{padding-top:4px;color: red;padding-bottom:3px}#fo_stat #s0 tr:nth-child(8) .row2 p:nth-child(1) strong{color:deepSkyBlue}#fo_stat #s0 tr:nth-child(8) .row2 p:nth-child(2) strong{color:yellowGreen}#fo_stat #s0 tr:nth-child(8) .row2 p:nth-child(4) strong{color:#EBEB00}
+
+.sceditor-container, .sceditor-container div, div.sceditor-dropdown, div.sceditor-dropdown div {z-index: auto}
+.maintitle~fieldset, .borderwrap>.ipbform, .borderwrap>fieldset {
+    box-shadow: 0 18px 0 -10px rgba(255,255,255,0.5), 0 36px 0 -20px rgba(255,255,255,0.3), 0 56px 0 -30px rgba(255,255,255,0.3), 0 76px 0 -40px rgba(255,255,255,0.3);
+}
+
+.author-rank {margin: -60px 0 -50px 110px;}
+.post-entry {text-align: center;}
+/* -- تحسين مظهر الإخطارات شريط الأدوات الخاص بك - */
+ #fa_toolbar #fa_right #fa_notifications.unread #notif_unread{background:#181818;background-image:url(http://i.imgur.com/aovdw88.png);background-position:25px 2px;background-repeat:no-repeat;display:inline;padding:7px 25px 7px 5px;color:#FF2020}
+
+/* hide-desktop-hide-mobile */
+.hide-desktop-wdbloog {display: none;}
+.hide-mobile-wdbloog {display: block;}
+@media screen and (max-width : 1000px){.hide-desktop-wdbloog {display: block;}
+.hide-mobile-wdbloog {display: none;}}
+
+.borderwrap .box-content:before, .borderwrap .maincontent:before, .borderwrap .maintitle~fieldse.borderwrap .box-content:after, .borderwrap .box-content:before, .borderwrap .maincontent:after, .borderwrap .maincontent:before, .borderwrap .maintitle~fieldset:after, .borderwrap .maintitle~fieldset:before, .borderwrap>.ipbform:after, .borderwrap>.ipbform:before, .borderwrap>fieldset:after, .borderwrap>fieldset:before,
+ .borderwrap .box-content, .borderwrap .maincontent, .borderwrap .maintitle~fieldset, .borderwrap>.ipbform, .borderwrap>fieldset
+ {-webkit-animation-name: fadeIn;-webkit-animation-timing-function: ease;-webkit-animation-duration: 1.2s;}
+/*وضع خلفية لاسم العضو 
+a[href^="/u1"] span strong{
+  background-image: url(http://www.bloggif.com/img/glitter/2221.gif)!important;
+  background: #ccc;
+    border: 2px solid #fff;
+    border-radius: 10px 25px/25px 10px;-moz-border-radius: 10px 25px/25px 10px;-webkit-border-radius: 10px 25px/25px 10px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 0px 0px 5px #000;-moz-box-shadow: 0px 0px 5px #000;-webkit-box-shadow: 0px 0px 5px #000;
+ }  */ 
+ 
